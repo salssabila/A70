@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Righteous&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Questrial;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Questrial;
+    animation: startAnim 1s;
+}
+
+@keyframes startAnim {
+    0% {
+        margin-top: -100px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.purp {
+    padding: 30px;
+    padding-top: 10px;
+    color: white;
+    font-family: Questrial;
+    background: linear-gradient(180deg, #232059 0%, #5A3896 30.19%, #6869F7 100%);
+}
+
+.bgpurp {
+    background-color: #6869F7;
+}
+
+.colorpurp {
+    color: #6869F7;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.dflex {
+    display: flex;
+}
+
+.flexcol {
+    flex-direction: column;
+}
+
+.flexrow {
+    flex-direction: row;
+}
+
+.mlauto {
+    margin-left: auto;
+}
+
+.mrauto {
+    margin-right: auto;
+}
+
+.justifycontentcenter {
+    justify-content: center;
+}
+
+.alignitemscenter {
+    align-items: center;
+}
+
+.flexwrap {
+    flex-wrap: wrap;
+}
+
+.btnmenu {
+    border: none;
+    outline: none;
+    font-family: Questrial;
+    background: none;
+    color: white;
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+.btnmenu:hover {
+    font-weight: bold;
+}
+
+.btnpink {
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Questrial;
+    background: #EB309A;
+    border: 4px solid #EB309A;
+    color: white;
+    font-size: 18px;
+    transition: 0.2s;
+    animation: floating 2s infinite ease-in-out;
+}
+
+.textpink {
+    color: #EB309A;
+}
+
+@keyframes floating {
+    0% {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    50% {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    100% {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+.btnpink:hover {
+    background: none;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.makerowifphone {
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 407px) {
+    .menu {
+        margin-left: 0;
+    }
+
+    .makerowifphone {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .makerowifphone {
+        flex-direction: column;
+    }
+
+    .centerifphone {
+        text-align: center !important;
+    }
+}
